@@ -1,0 +1,7 @@
+._.DS_Store
+.DS_Store
+
+config.php
+error.log
+node_modules/
+build/

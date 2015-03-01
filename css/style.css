@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 100.01%;
+    height: 100%;
+
+}
+
+
+.wrapper {
+    max-width: 1024px;
+    height: 100%;
+
+    padding: 1rem 1rem;
+    margin: 0 auto;
+
+    background: #fff;
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+    -webkit-align-items: center;
+        -ms-flex-align: start;
+            align-items: center;
+}
+
+.task-list {
+    width: 50%;
+
+    height: 100%;
+}
+
+.task-list-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+-webkit-box-align: stretch;
+-webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    height: 100%;
+}
+
+.list-filter {
+    min-height: 3rem;
+}
+
+.list-lists {
+    overflow: scroll;
+  /*  -webkit-overflow-scrolling: touch; */
+    background: #fff;
+    border: 1px #ccc solid;
+}
+
+.list-filter .filter-input {
+    width: 100%;
+    display: block;
+
+    padding: 0.3rem;
+
+    border: 1px #ccc solid;
+    background-color: #fff;
+
+
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.lists-project-header {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    border-bottom: 1px #ccc solid;
+}
+
+
+.lists-project-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.lists-list .list-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-box-align: center;
+
+    -webkit-align-items: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+
+    padding: 0.5rem 2rem;
+    margin: 0.25rem 0;
+}
+
+.lists-list .list-item:hover {
+    cursor: pointer;
+}
+.lists-list .list-item:nth-child(2n) {
+    background-color: #f6f6f6;
+}
+
+.lists-list .list-item.list-item-active {
+    background-color: #FFFCB1;
+}
+
+
+.lists-list .list-item .item-info {
+    width: 80%;
+}
+
+.lists-list .list-item .item-info a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.lists-list .list-item .item-tracker {
+    display: block;
+    font-size: 0.8rem;
+    color: #aaa;
+
+    margin-bottom: 0.5rem;
+}
+
+.lists-list .list-item .item-title {
+    display: block;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.lists-list .list-item .item-times {
+    width: 20%;
+    text-align: right;
+}
+
+.current-task {
+    width: 50%;
+
+
+    padding: 0 3rem;
+}
+
+.task-info h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+.info-times .list-item {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.task-current-time {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+
+    padding: 6rem 0;
+}
+
+.task-start-stop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.task-reset {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.task-reset .reset-button {
+    cursor: pointer;
+    border-bottom: 1px #333 dotted;
+}
+
+.task-start-stop .button {
+    cursor: pointer;
+    display: block;
+    margin: 0 1rem;
+
+    padding: 1rem 0;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: #39ba27;
+    color: #fff;
+
+
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.task-start-stop .button:focus {
+  outline: none;
+}
+
+.task-start-stop .button.start-button-inactive {
+    background-color: #39ba27;
+    width: 100%;
+}
+
+.task-start-stop .button.start-button-pause {
+    width: 50%;
+}
+
+.task-start-stop .button.start-button-active {
+    background: #F24646;
+    width: 50%;
+}
+
+.task-start-stop .button.end-button-inactive {
+    display: none;
+}
+
+.task-start-stop .button.end-button-active {
+    background: #2A9191;
+    width: 50%;
+}
+
