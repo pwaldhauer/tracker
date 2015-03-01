@@ -1,4 +1,6 @@
 var React = require('react');
+
+var taskStore = require('./TaskStore');
 var TaskListFilter = React.createClass({
     onChange: function(e) {
         taskStore.setFilter(e.target.value);
